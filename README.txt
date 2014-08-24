@@ -6,14 +6,18 @@ cat your-tumblr-template.html | coffee render.coffee --content-map your-content-
 
 ## To get your blog's content map ##
 
+The content map is JSON with all of your blog's variables (title, colors, sample posts)
+
 - Open https://www.tumblr.com/customize
 - javascript:copy(JSON.stringify(Tumblr.Template.content_map))
 
-## tumblr_template.js ##
+## theme_engine.js ##
 
-scripts/tumblr_template.js was extracted from https://secure.assets.tumblr.com/assets/scripts/customize_v3/quick_update.js
+scripts/theme_engine.js was extracted from https://secure.assets.tumblr.com/assets/scripts/customize_v3.js?_v=7ad8863121a935576a791f1e0ece9b60
 
-... which is one of the script tags on https://www.tumblr.com/customize/
+... which is one of the script tags on https://www.tumblr.com/customize
+
+It is the code starting at "/*! scripts/theme_engine.js */"
 
 ## underscore ##
 

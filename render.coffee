@@ -10,7 +10,7 @@ content_map = JSON.parse rw.readFileSync(argv['content-map'], 'utf8')
 
 jsdom.env
   html: '<div></div>'
-  scripts: [ 'scripts/jquery.js', 'scripts/underscore.js', 'scripts/tumblr_template.js' ]
+  scripts: [ 'scripts/jquery.js', 'scripts/underscore.js', 'scripts/theme_engine.js' ]
   created: (error, window) ->
     window.TumblrData =
       feature: {}
