@@ -2,7 +2,7 @@ Render a tumblr template with the Javascript renderer written by Tumblr.
 
 ## To run ##
 
-cat your-tumblr-template.html | coffee render.coffee --content-map your-content-map.js
+cat example/template.html | coffee render.coffee --content-map example/content_map.json >example/output.html
 
 ## To get your blog's content map ##
 
