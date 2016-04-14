@@ -8,7 +8,7 @@ cat example/template.html | coffee render.coffee --content-map example/content_m
 
 The content map is JSON with all of your blog's variables (title, colors, sample posts)
 
-- Open https://www.tumblr.com/customize
+- open https://www.tumblr.com/customize
 - javascript:copy(JSON.stringify(Tumblr.Template.content_map))
 
 ## theme_engine.js ##
