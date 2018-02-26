@@ -1,10 +1,10 @@
-Render a tumblr template with the Javascript renderer written by Tumblr.
+Render a tumblr template with Tumblr's Javascript renderer.
 
 ## To run ##
 
-cat example/template.html | coffee render.coffee --content-map example/content_map.json >example/output.html
+`make example`
 
-## To get your blog's content map ##
+## To get a blog's content map ##
 
 The content map is JSON with all of your blog's variables (title, colors, sample posts)
 
@@ -13,16 +13,8 @@ The content map is JSON with all of your blog's variables (title, colors, sample
 
 ## theme_engine.js ##
 
-scripts/theme_engine.js was extracted from https://secure.assets.tumblr.com/assets/scripts/customize_v3.js?_v=7ad8863121a935576a791f1e0ece9b60
+scripts/theme_engine.js was extracted from one of the script tags on https://www.tumblr.com/customize
 
-... which is one of the script tags on https://www.tumblr.com/customize
+https://secure.assets.tumblr.com/assets/scripts/customize_v3.js?_v=7ad8863121a935576a791f1e0ece9b60
 
-It is the code starting at "/*! scripts/theme_engine.js */"
-
-## underscore ##
-
-curl http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js >scripts/underscore.js
-
-## jquery ##
-
-curl http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js >scripts/jquery.js
+It starts at "/*! scripts/theme_engine.js */"
